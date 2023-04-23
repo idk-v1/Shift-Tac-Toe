@@ -19,7 +19,7 @@ init(window.prompt("Grid Size:", "4"));
 function init(num)
 {
     SIZE = num;
-    tileSize = can.width / SIZE;
+    tileSize = Math.min(can.width, can.height) / SIZE;
     board = "";
     board = [];
     for (var x = 0; x < SIZE; x++)
