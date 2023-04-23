@@ -10,7 +10,7 @@ var offx = 0;
 var offy = 0;
 var anSpeed = 10;
 
-can.width = (window.innerWidth * 0.8, window.innerHeight * 0.8);
+can.width = Math.min(window.innerWidth * 0.8, window.innerHeight * 0.8);
 can.height = can.width;
 can.addEventListener("click", input);
 
@@ -19,7 +19,7 @@ init(window.prompt("Grid Size:", "4"));
 function init(num)
 {
     SIZE = num;
-    tileSize = Math.min(can.width, can.height) / SIZE;
+    tileSize = can.width / SIZE;
     board = "";
     board = [];
     for (var x = 0; x < SIZE; x++)
