@@ -7,3 +7,5 @@ Reload the page to start a new game.
 Recommended grid size: 4 or 5
 
 https://idk-v1.github.io/Shift-Tac-Toe/
+
+Link to more chaotic version https://idk-v1.github.io/Shift-Tac-Toe-Improved/
